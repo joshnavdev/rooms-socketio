@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello world</title>
+  </head>
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <body style="font-size: 12px">
+    <div class="stats">
+      <ul class="rooms" style="list-style: none; margin: 0px">
+          <li>Users connected: <span id="clients">0</span></li>
+          <!-- <li>No Users connected in rooms: <span id="no-room">0</span></li> -->
+          <li>Users connected in room1: <span id="room1">0</span></li>
+          <li>Users connected in room2: <span id="room2">0</span></li>
+          <li>Users connected in room3: <span id="room3">0</span></li>
+          <li>Current room: <span id="current-rooms">no room</span></li>
+      </ul>
+    </div>
+    <div class="actions" style="margin-top: 20px">
+      <button id="bt1" style="width: 100%">Join room1</button>
+      <button id="bt2" style="width: 100%">Join room2</button>
+      <button id="bt3" style="width: 100%">Join room3</button>
+      <button id="btleave" style="width: 100%">Leave room</button>
+      <button id="btsend" style="width: 100%">Send message</button>
+      <button id="btclean" style="width: 100%">Clean message</button>
+    </div>
+    <div>
+      <ul id="messages" style="list-style: none; overflow-y: scroll; border: solid black 1px; height: 120px">
+      </ul>
+    </div>
+    <script type="text/javascript" src="home.js"></script>
+  </body>
+</html>

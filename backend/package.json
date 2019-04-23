@@ -1,0 +1,21 @@
+{
+  "name": "chat-socketio",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Joshua Navarro <joshua.navarro35@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
